@@ -1,110 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iT-U Company | Professional IT Support & Networking Solutions</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        cyber: { 50: '#eef2ff', 600: '#4f46e5', 700: '#4338ca', 900: '#312e81' }
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iT-U Company | Enterprise IT & Network Solutions</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">iT-U Company</a>
+      <button class="mobile-menu-btn">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about/index.html">About</a></li>
+        <li><a href="services/index.html">Services</a></li>
+        <li><a href="solutions/index.html">Solutions</a></li>
+        <li><a href="contact/index.html">Contact</a></li>
+        <li><button class="theme-toggle">☀️ Light Mode</button></li>
+      </ul>
+    </div>
+  </header>
 
-    <!-- Header & Navigation -->
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="index.html" class="text-2xl font-black tracking-tight text-cyber-600 dark:text-cyber-400">
-                iT-U<span class="text-slate-900 dark:text-white">Company</span>
-            </a>
-            
-            <nav class="hidden md:flex items-center space-x-8 font-medium">
-                <a href="index.html" class="text-cyber-600 dark:text-cyber-400">Home</a>
-                <a href="about/index.html" class="hover:text-cyber-600 transition-colors">About</a>
-                <a href="services/index.html" class="hover:text-cyber-600 transition-colors">Services</a>
-                <a href="solutions/index.html" class="hover:text-cyber-600 transition-colors">Solutions</a>
-                <a href="contact/index.html" class="hover:text-cyber-600 transition-colors">Contact</a>
-            </nav>
+  <section class="hero">
+    <h1>Enterprise Infrastructure & <span>IT Support Solutions</span></h1>
+    <p>Empowering businesses with robust network engineering, bulletproof security hardening, and resilient systems administration.</p>
+    <div>
+      <a href="services/index.html" class="btn">Our Services</a>
+      <a href="contact/index.html" class="btn btn-secondary">Get in Touch</a>
+    </div>
+  </section>
 
-            <div class="flex items-center space-x-4">
-                <!-- Theme Toggle -->
-                <button id="theme-toggle" aria-label="Toggle theme" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
-                    <svg id="theme-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-                </button>
-                <a href="contact/index.html" class="hidden sm:inline-block bg-cyber-600 hover:bg-cyber-700 text-white px-5 py-2.5 rounded-xl font-medium shadow-lg shadow-cyber-600/20 transition-all">Get Support</a>
-            </div>
-        </div>
-    </header>
+  <div class="container">
+    <h2 class="section-title">Core IT Capabilities</h2>
+    <p class="section-subtitle">Scalable technical engineering built for modern enterprises.</p>
+    
+    <div class="grid">
+      <div class="card">
+        <h3>Network Infrastructure</h3>
+        <p>Enterprise routing, switching, LAN/WAN setup, and CCNA-level deployments optimized for high uptime.</p>
+        <a href="services/network-support.html" class="btn btn-secondary">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Cybersecurity Audits</h3>
+        <p>Comprehensive security assessments, firewall architecture configurations, and threat mitigation.</p>
+        <a href="services/cybersecurity.html" class="btn btn-secondary">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Server Administration</h3>
+        <p>Windows & Linux server deployments, active directory management, backup recovery, and maintenance.</p>
+        <a href="services/server-admin.html" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </div>
 
-    <!-- Hero Section -->
-    <section class="relative py-24 lg:py-32 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="max-w-3xl">
-                <span class="inline-block py-1 px-3 rounded-full bg-cyber-50 dark:bg-cyber-900/50 text-cyber-600 dark:text-cyber-400 text-sm font-semibold mb-6">Enterprise IT Support & Infrastructure</span>
-                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                    Reliable IT Support & <span class="text-cyber-600 dark:text-cyber-400">Network Engineering</span>
-                </h1>
-                <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 mb-10 leading-relaxed">
-                    Delivering robust infrastructure, enterprise networking solutions, and advanced technical support to keep your operations secure and online.
-                </p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="services/index.html" class="bg-cyber-600 hover:bg-cyber-700 text-white text-center px-8 py-4 rounded-xl font-semibold shadow-xl shadow-cyber-600/30 transition-all">Explore Services</a>
-                    <a href="contact/index.html" class="bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-center px-8 py-4 rounded-xl font-semibold transition-all">Contact Expert</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <footer>
+    <p>&copy; 2026 iT-U Company. All rights reserved.</p>
+  </footer>
 
-    <!-- Core Services Grid -->
-    <section class="py-20 bg-white dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold tracking-tight mb-4">Core Technical Expertise</h2>
-                <p class="text-slate-600 dark:text-slate-400">Comprehensive IT systems engineering tailored for modern business performance.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700">
-                    <h3 class="text-xl font-bold mb-3">Network Architecture</h3>
-                    <p class="text-slate-600 dark:text-slate-400 mb-6">Enterprise routing, switching, LAN/WAN setup, and secure VPN configurations.</p>
-                    <a href="services/network-support.html" class="text-cyber-600 dark:text-cyber-400 font-semibold hover:underline">Learn more &rarr;</a>
-                </div>
-                <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700">
-                    <h3 class="text-xl font-bold mb-3">Cybersecurity & Audits</h3>
-                    <p class="text-slate-600 dark:text-slate-400 mb-6">Firewall deployment, infrastructure hardening, and proactive risk assessments.</p>
-                    <a href="services/cybersecurity.html" class="text-cyber-600 dark:text-cyber-400 font-semibold hover:underline">Learn more &rarr;</a>
-                </div>
-                <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700">
-                    <h3 class="text-xl font-bold mb-3">Server Administration</h3>
-                    <p class="text-slate-600 dark:text-slate-400 mb-6">Windows & Linux server deployment, maintenance, and automated data backups.</p>
-                    <a href="services/server-admin.html" class="text-cyber-600 dark:text-cyber-400 font-semibold hover:underline">Learn more &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between">
-            <p class="text-slate-500 text-sm">&copy; 2026 iT-U Company. All rights reserved.</p>
-            <div class="flex space-x-6 mt-4 sm:mt-0 text-sm text-slate-500">
-                <a href="about/index.html" class="hover:text-cyber-600">About</a>
-                <a href="services/index.html" class="hover:text-cyber-600">Services</a>
-                <a href="contact/index.html" class="hover:text-cyber-600">Contact</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
