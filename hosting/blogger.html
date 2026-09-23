@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blogger | iT-U Company</title>
+<meta name="description" content="Enterprise IT, network, cybersecurity and web development solutions from iT-U Company.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={darkMode:'class',theme:{extend:{colors:{brand:{DEFAULT:'#0284c7',dark:'#0369a1',light:'#38bdf8'}}}}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../css/styles.css">
+<script defer src="../js/main.js"></script>
+</head>
+<body>
+
+<header class="sticky top-0 z-50 border-b border-slate-200/70 dark:border-slate-800/70 bg-white/90 dark:bg-slate-950/90 backdrop-blur">
+  <div class="max-w-[1180px] mx-auto px-4">
+    <div class="h-16 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3">
+        <span class="w-10 h-10 rounded-xl bg-sky-600 text-white grid place-items-center shadow-lg shadow-sky-600/20"><i class="fa-solid fa-network-wired"></i></span>
+        <span class="font-extrabold tracking-tight text-lg">iT-U <span class="text-sky-600">Company</span></span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-6">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="../about/index.html">About</a>
+        <div class="relative group">
+          <button class="nav-link flex items-center gap-1">Services <i class="fa-solid fa-chevron-down text-xs"></i></button>
+          <div class="absolute left-0 top-full pt-3 hidden group-hover:block w-64">
+            <div class="card p-2 shadow-2xl">
+              <a class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="../services/index.html">All Services</a>
+              <a class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="../services/network-support.html">Network Support</a>
+              <a class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="../services/cybersecurity.html">Cybersecurity</a>
+              <a class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="../services/server-admin.html">Server Administration</a>
+              <a class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="../services/web-development/index.html">Web Development</a>
+              <a class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="../services/web-development/pricing.html">Website Pricing</a>
+            </div>
+          </div>
+        </div>
+        <a class="nav-link" href="../solutions/index.html">Solutions</a>
+        <a class="nav-link" href="../hosting/index.html">Hosting</a>
+        <a class="nav-link" href="../contact/index.html">Contact</a>
+        <button data-theme-toggle class="w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-700 grid place-items-center">
+          <i data-theme-icon class="fa-solid fa-moon"></i>
+        </button>
+        <a class="btn-primary" href="../contact/index.html">Get a Quote</a>
+      </nav>
+      <div class="lg:hidden flex items-center gap-2">
+        <button data-theme-toggle class="w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-700 grid place-items-center"><i data-theme-icon class="fa-solid fa-moon"></i></button>
+        <button data-mobile-toggle class="w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-700 grid place-items-center"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+    <div data-mobile-menu class="hidden pb-4">
+      <div class="card p-3 space-y-1">
+        <a class="block p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="../index.html">Home</a>
+        <a class="block p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="../about/index.html">About</a>
+        <button data-mobile-services class="w-full text-left p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 flex justify-between">Services <i class="fa-solid fa-chevron-down"></i></button>
+        <div data-mobile-services-menu class="hidden pl-3">
+          <a class="block p-2" href="../services/index.html">All Services</a>
+          <a class="block p-2" href="../services/network-support.html">Network Support</a>
+          <a class="block p-2" href="../services/cybersecurity.html">Cybersecurity</a>
+          <a class="block p-2" href="../services/server-admin.html">Server Administration</a>
+          <a class="block p-2" href="../services/web-development/index.html">Web Development</a>
+          <a class="block p-2" href="../services/web-development/pricing.html">Website Pricing</a>
+        </div>
+        <a class="block p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="../solutions/index.html">Solutions</a>
+        <a class="block p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="../hosting/index.html">Hosting</a>
+        <a class="block p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="../contact/index.html">Contact</a>
+        <a class="btn-primary w-full mt-2" href="../contact/index.html">Get a Quote</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="hero-grid soft-grid">
+  <div class="max-w-[1180px] mx-auto px-4 py-20 md:py-28">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-sky-100 dark:bg-sky-950/60 text-sky-700 dark:text-sky-300 text-sm font-bold mb-5"><i class="fa-brands fa-blogger"></i>BLOGGER</div>
+      <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight">Blogger hosting for simple content websites.</h1>
+      <p class="mt-6 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">Blogger can provide hosting for suitable blog and content-focused sites without a separate traditional hosting bill.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a class="btn-primary" href="../contact/index.html">Request a Quote <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="btn-secondary" href="../services/index.html">Explore Services</a>
+      </div>
+    </div>
+  </div>
+</section><section class="section"><div class="container"><div class="grid lg:grid-cols-2 gap-10"><div><h2 class="text-3xl font-black">Key points</h2><ul class="mt-6 space-y-4"><li class="flex gap-3"><i class="fa-solid fa-check text-sky-600 mt-1"></i><span>Hosted publishing platform</span></li><li class="flex gap-3"><i class="fa-solid fa-check text-sky-600 mt-1"></i><span>Custom domain can be connected</span></li><li class="flex gap-3"><i class="fa-solid fa-check text-sky-600 mt-1"></i><span>Suitable for blogs and simple content</span></li><li class="flex gap-3"><i class="fa-solid fa-check text-sky-600 mt-1"></i><span>Lower infrastructure management</span></li><li class="flex gap-3"><i class="fa-solid fa-check text-sky-600 mt-1"></i><span>Less flexible for custom application requirements</span></li></ul></div><div class="card p-7"><h3 class="text-xl font-bold">When to consider another option</h3><p class="mt-3 text-slate-500 dark:text-slate-400 leading-7">If your website needs databases, server-side code, advanced e-commerce functions, custom APIs or business email, discuss the requirements before selecting a free static/content platform.</p><a class="btn-primary mt-7" href="../contact/index.html">Ask About Hosting</a></div></div></div></section>
+
+<footer class="border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+  <div class="max-w-[1180px] mx-auto px-4 py-12">
+    <div class="grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-10 h-10 rounded-xl bg-sky-600 text-white grid place-items-center"><i class="fa-solid fa-network-wired"></i></span>
+          <span class="font-extrabold text-lg">iT-U Company</span>
+        </div>
+        <p class="text-slate-500 dark:text-slate-400 max-w-lg">Enterprise IT, network, cybersecurity, server administration and professional web development solutions for modern organisations.</p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4">Services</h3>
+        <div class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+          <a class="block hover:text-sky-600" href="../services/network-support.html">Network Support</a>
+          <a class="block hover:text-sky-600" href="../services/cybersecurity.html">Cybersecurity</a>
+          <a class="block hover:text-sky-600" href="../services/server-admin.html">Server Administration</a>
+          <a class="block hover:text-sky-600" href="../services/web-development/index.html">Web Development</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4">Company</h3>
+        <div class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+          <a class="block hover:text-sky-600" href="../about/index.html">About</a>
+          <a class="block hover:text-sky-600" href="../solutions/index.html">Solutions</a>
+          <a class="block hover:text-sky-600" href="../hosting/index.html">Hosting</a>
+          <a class="block hover:text-sky-600" href="../contact/index.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between gap-3 text-sm text-slate-500">
+      <p>© <span data-year></span> iT-U Company. All rights reserved.</p>
+      <p>South Africa · Enterprise IT & Network Solutions</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
